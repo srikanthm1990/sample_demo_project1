@@ -1,0 +1,7 @@
+// =========Helpers for vertical spacing
+.spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.span-require-field { color: #D33724; }
+.sign-in-checkbox-margin {
+  margin-left: 20px;
+}

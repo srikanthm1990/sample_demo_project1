@@ -1,0 +1,37 @@
+<h1>Listing boys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>User</th>
+      <th>Age</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Class</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boys.each do |boy| %>
+      <tr>
+        <td><%= boy.name %></td>
+        <td><%= boy.user_id %></td>
+        <td><%= boy.age %></td>
+        <td><%= boy.height %></td>
+        <td><%= boy.weight %></td>
+        <td><%= boy.class %></td>
+        <td><%= link_to 'Show', boy %></td>
+        <td><%= link_to 'Edit', edit_boy_path(boy) %></td>
+        <td><%= link_to 'Destroy', boy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boy', new_boy_path %>

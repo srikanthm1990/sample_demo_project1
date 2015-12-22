@@ -1,0 +1,2 @@
+module StructureServicesHelper
+end

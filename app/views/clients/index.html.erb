@@ -1,0 +1,28 @@
+<table>
+	<tr>
+		<th>
+			NAME
+		</th>
+
+		<th>
+			ID
+		</th>
+
+	</tr>
+
+
+	<h1>SRIKANTH</h1>
+     
+
+	<% @clients.each do |client| %>
+
+	<tr>
+		<td>
+		<%= client.name %>
+		</td>
+		<td>
+		<%= client.id%>
+		</td>
+	</tr>
+	<%end%>
+</table>
